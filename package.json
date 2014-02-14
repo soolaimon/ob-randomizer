@@ -1,0 +1,27 @@
+{
+  "name": "ob-randomizer",
+  "version": "0.0.0",
+  "description": "Chooses random sales angent to transfer voicemail or email sales lead",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/soolaimon/ob-randomizer.git"
+  },
+  "keywords": [
+    "ob-randomizer",
+    "heroku"
+  ],
+  "author": "Dave Nelson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soolaimon/ob-randomizer/issues"
+  },
+  "homepage": "https://github.com/soolaimon/ob-randomizer",
+  "dependencies": {
+    "express": "~3.4.8",
+    "jsonfile": "~1.1.1"
+  }
+}

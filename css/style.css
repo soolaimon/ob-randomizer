@@ -3,7 +3,7 @@
 	background-color: #adbd73;
 	width: 100%;
 	font-family: sans-serif;
-	height: 40%;
+	/*height: 70%;*/
 	padding: 10px;
 	text-align: center;
 }
@@ -13,11 +13,8 @@
 
 }
 
-input[type="submit"]{
-	border: none;
-	color: white;
+.randomize {
 	background-color: orange;
-	height: 80px;
-	width: 160px;
-	font-size: 50px;
+	width: 100px;
+	color: white;
 }
