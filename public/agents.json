@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Geoff P",
+    "present": true
+  },
+  {
+    "name": "Martha W",
+    "present": true
+  },
+  {
+    "name": "Ammon W",
+    "present": false
+  },
+  {
+    "name": "Ron R",
+    "present": false
+  },
+  {
+    "name": "Cassandra A",
+    "present": true
+  },
+  {
+    "name": "Mindy G",
+    "present": false
+  }
+]
