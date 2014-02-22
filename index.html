@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="obApp">
 <head>
 	<meta charset="UTF-8">
 	<title>Random Outbound</title>
@@ -12,13 +12,25 @@
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	</head>
 <body>
-	<div "container-fluid">
+	<div class="container-fluid">
 		<div class="main-head">
 			<h1>Pick a Random Outbound Agent</h1>
-			<button type="button" data-toggle="modal" data-target="#winner" class="btn btn-default btn-lg randomize">Go</button>
+			<button type="button" data-toggle="modal" data-target="#winner" class="btn btn-default btn-lg randomize">go</button>
 
 		
 		<div class="container agent-list"></div>
+	</div>
+		
+	<div class="agent-area container" ng-controller="obController">
+		<div class="agent-list">
+			
+				<div ng-repeat="agent in agents">
+					<button class="btn btn-primary agent-btn" ng-class="{present: agent.present === true}" ng-click="agent.present = !agent.present; change();" ng-model="agent.present">{{ agent.name }}</button>
+				</div>
+			
+			
+		</div>
+
 	</div>
 
 
@@ -26,10 +38,13 @@
 <div class="modal fade bs-example-modal-lg" id="winner" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content announcement">
-      <h1>The winner is</h1>
+      <h1>The winner is {{ winner }}</h1>
     </div>
   </div>
 </div>
+</div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+<script src="js/obApp.js"></script>
 </body>
 </html>
