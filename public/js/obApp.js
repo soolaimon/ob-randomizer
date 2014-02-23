@@ -17,6 +17,7 @@ obApp.controller("obController", function ($scope, $http){
 
 	};
 
+	// Adds present agents to 'here' array, picks random out of that.
 	$scope.randomize = function (){
 		
 		console.log($scope.agents.length);
@@ -33,7 +34,7 @@ obApp.controller("obController", function ($scope, $http){
 
 	};
 
-
+	
 	$scope.addAgent = function (newAgent){
 
 		$scope.agents.push({'name' : newAgent, "present": true});
