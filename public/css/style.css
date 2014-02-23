@@ -1,6 +1,10 @@
+/**{
+	background-image: url('../old_moon.png');
+}
+*/
 .main-head {
 	color: white;
-	background-color: #adbd73;
+	background-color: rgb(103, 67, 151);
 	width: 100%;
 	font-family: sans-serif;
 	/*height: 70%;*/
@@ -24,7 +28,7 @@
 }
 
 .agent-area {
-	
+
 	padding-top: 30px;
 	display: -webkit-flex;
 	-webkit-flex-wrap: wrap;
@@ -41,4 +45,13 @@
 }
 .present {
 	background-color: #5cb85c;
+}
+
+.new-agent-area{
+	margin: 30px auto;
+
+}
+
+.add-agent{
+
 }

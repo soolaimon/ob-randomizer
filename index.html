@@ -15,7 +15,7 @@
 	<div class="container-fluid">
 		<div class="main-head">
 			<h1>Pick a Random Outbound Agent</h1>
-			<button data-toggle="modal" data-target="#winner" class="btn btn-default btn-lg randomize" ng-click="randomize()">go</button>
+			<button data-toggle="modal" data-target="#winner" class="btn btn-default btn-lg randomize" ng-click="randomize()">Go</button>
 
 		</div>
 		
@@ -24,9 +24,14 @@
 				
 			<div class="container-fluid agent-list" ng-repeat="agent in agents">
 				<button class="btn btn-primary agent-btn" ng-class="{present: agent.present === true}" 
-				ng-click="agent.present = !agent.present; change();">{{ agent.name }}</button>
+				ng-click="agent.present = !agent.present; updateAgents();">{{ agent.name }}</button>
 			</div>
 				
+		<div class="container-fluid new-agent-area">
+			
+		
+			
+		</div>
 				
 			
 

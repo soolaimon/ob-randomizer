@@ -9,7 +9,7 @@ obApp.controller("obController", function ($scope, $http){
 
 	});
 
-	$scope.change = function () {
+	$scope.updateAgents = function () {
 		console.log($scope.agents.length);
 		$http.post('/agents', $scope.agents).success(function (data){
 			console.log(data);
@@ -18,6 +18,7 @@ obApp.controller("obController", function ($scope, $http){
 	};
 
 	$scope.randomize = function (){
+		
 		console.log($scope.agents.length);
 		
 		$scope.here = [];
@@ -32,6 +33,7 @@ obApp.controller("obController", function ($scope, $http){
 
 	};
 
+	
 	
 });
 
