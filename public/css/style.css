@@ -6,7 +6,6 @@
 	/*height: 70%;*/
 	padding: 10px;
 	text-align: center;
-	box-sizing: border-box;
 }
 
 .title-container{
@@ -26,15 +25,18 @@
 
 .agent-area {
 	
-}
-
-.agent-list{
-
+	padding-top: 30px;
+	display: -webkit-flex;
+	-webkit-flex-wrap: wrap;
+	-webkit-flex-justify-content: space-between;
 }
 
 .agent-btn {
 	margin: 4px;
 	background-color: #d9534f;
+	width: 10em;
+	
+
 
 }
 .present {

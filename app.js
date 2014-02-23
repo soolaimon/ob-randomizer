@@ -1,7 +1,6 @@
 var sys = require("sys");
 var express = require("express");
 var app = express();
-var rand = require("./rand");
 
 var jf = require('jsonfile');
 var util = require('util');

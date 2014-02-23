@@ -9,11 +9,11 @@
   },
   {
     "name": "Ammon W",
-    "present": false
+    "present": true
   },
   {
     "name": "Ron R",
-    "present": false
+    "present": true
   },
   {
     "name": "Cassandra A",
@@ -21,6 +21,6 @@
   },
   {
     "name": "Mindy G",
-    "present": false
+    "present": true
   }
 ]
