@@ -9,3 +9,20 @@ At my job, the customer support team sometimes receives a voicemail or email fro
 2. Click orange "go" button. The random agent's name will appear on your screen.
 3. Rinse and repeat.
 
+### Add agent
+1. Type agent name.
+2. Click "Add Agent."
+
+### Remove Agent
+1. Click X icon on agent button.
+2. Confirm
+
+## Developers
+
+```
+git clone https://github.com/soolaimon/ob-randomizer.git
+
+npm install
+
+```
+
