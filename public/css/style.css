@@ -2,6 +2,7 @@
 	background-image: url('../old_moon.png');
 }
 */
+
 .main-head {
 	color: white;
 	background-color: rgb(103, 67, 151);
@@ -31,12 +32,12 @@
 
 	padding-top: 30px;
 	display: -webkit-flex;
+	-webkit-flex-direction: column;
 	-webkit-flex-wrap: wrap;
 	-webkit-flex-justify-content: space-between;
 }
 
 .agent-btn {
-	margin: 4px;
 	background-color: #d9534f;
 	width: 10em;
 	
@@ -48,10 +49,29 @@
 }
 
 .new-agent-area{
+	display: -webkit-flexbox;
 	margin: 30px auto;
+	text-align: center;
+	position: fixed center;
 
 }
 
-.add-agent{
-
+.add-box{
+	height: 42px;
+	width: 100%;
 }
+
+.add-btn{
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+i {
+	float: right;	
+}
+
+
+
+

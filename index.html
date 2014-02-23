@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap-css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	</head>
@@ -24,12 +25,13 @@
 				
 			<div class="container-fluid agent-list" ng-repeat="agent in agents">
 				<button class="btn btn-primary agent-btn" ng-class="{present: agent.present === true}" 
-				ng-click="agent.present = !agent.present; updateAgents();">{{ agent.name }}</button>
+				ng-click="agent.present = !agent.present; updateAgents();">{{ agent.name }}<span><i class="glyphicon glyphicon-remove-sign" "rm-agent" ng-click="rmAgent($index)"></i></span></button>
 			</div>
 				
 		<div class="container-fluid new-agent-area">
 			
-		
+			<input type="text" class="add-box" ng-model="newAgent.name" placeholder="Agent Name">
+			<button class="btn btn-primary btn-lg add-btn" ng-click="addAgent(newAgent.name)">Add Agent</button>
 			
 		</div>
 				

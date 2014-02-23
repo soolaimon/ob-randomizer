@@ -1,26 +1,30 @@
 [
   {
-    "name": "Geoff P",
+    "name": "Mindy",
     "present": true
   },
   {
-    "name": "Martha W",
+    "name": "Geoff",
     "present": true
   },
   {
-    "name": "Ammon W",
+    "name": "Ron",
     "present": true
   },
   {
-    "name": "Ron R",
+    "name": "Martha",
     "present": true
   },
   {
-    "name": "Cassandra A",
+    "name": "Ammon",
     "present": true
   },
   {
-    "name": "Mindy G",
+    "name": "Martha",
+    "present": true
+  },
+  {
+    "name": "Cassandra",
     "present": true
   }
 ]
