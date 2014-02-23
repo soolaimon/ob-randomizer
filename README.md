@@ -24,5 +24,6 @@ git clone https://github.com/soolaimon/ob-randomizer.git
 
 npm install
 
+supervisor app.js
 ```
 
