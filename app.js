@@ -10,7 +10,7 @@ var file = 'public/agents.json';
 
 app.configure(function() {
         app.use(express.static(__dirname + '/public'));
-        app.use(express.json()); 
+        app.use(express.json());
 });
 
 app.get('/', function(req, res) {
@@ -21,14 +21,13 @@ app.get('/agents', function(req, res) {
 	res.sendfile('public/agents.json');
 });
 
+//  Updates .json file with agent list, present/not.
 app.post('/agents', function(req, res) {
 	res.send("got it");
-	console.log(req.body);
 	var newList = req.body;
 	jf.writeFile(file, newList, function(err){
 		console.log(err);
 	});
-
 });
 
 
@@ -37,7 +36,6 @@ app.post('/agents', function(req, res) {
 var port = Number(process.env.PORT || 5000);
 app.listen(port, function() {
   console.log("Listening on " + port);
-
 });
 
 

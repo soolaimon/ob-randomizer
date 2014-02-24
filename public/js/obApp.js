@@ -20,8 +20,6 @@ obApp.controller("obController", function ($scope, $http){
 	// Adds present agents to 'here' array, picks random out of that.
 	$scope.randomize = function (){
 		
-		console.log($scope.agents.length);
-		
 		$scope.here = [];
 
 		for (i = 0; i < $scope.agents.length; i++){
@@ -34,7 +32,7 @@ obApp.controller("obController", function ($scope, $http){
 
 	};
 
-	
+
 	$scope.addAgent = function (newAgent){
 
 		$scope.agents.push({'name' : newAgent, "present": true});
@@ -43,13 +41,13 @@ obApp.controller("obController", function ($scope, $http){
 	
 	$scope.rmAgent = function (index) {
 
-		if(window.confirm("Do you really want to remove " + $scope.agents[index].name + "?")){		
+		if(window.confirm("Do you really want to remove " + $scope.agents[index].name + "?")){
 			$scope.agents.splice(index, 1);
 			$scope.updateAgents();
-
+			
 		}
 
-	};	
+	};
 
 });
 
