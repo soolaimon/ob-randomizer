@@ -12,7 +12,6 @@ obApp.controller("obController", function ($scope, $http){
 	$scope.updateAgents = function () {
 		console.log($scope.agents.length);
 		$http.post('/agents', $scope.agents).success(function (data){
-			console.log(data);
 		});
 
 	};

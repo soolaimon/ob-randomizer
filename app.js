@@ -26,7 +26,7 @@ app.post('/agents', function(req, res) {
 	res.send("got it");
 	var newList = req.body;
 	jf.writeFile(file, newList, function(err){
-		console.log(err);
+		
 	});
 });
 

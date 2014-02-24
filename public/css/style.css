@@ -70,8 +70,16 @@
 }
 
 i {
-	float: right;	
+	border-radius: 50%;
+	float: right;
+/*	font-size: .8em;*/
 }
+
+i:hover{
+	color: #A60000;
+	background-color: white;
+}
+
 
 
 
