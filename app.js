@@ -9,8 +9,8 @@ var file = 'public/agents.json';
 
 
 app.configure(function() {
-        app.use(express.static(__dirname + '/public'));
-        app.use(express.json());
+    app.use(express.static(__dirname + '/public'));
+    app.use(express.json());
 });
 
 app.get('/', function(req, res) {
@@ -35,7 +35,7 @@ app.post('/agents', function(req, res) {
 
 var port = Number(process.env.PORT || 5000);
 app.listen(port, function() {
-  console.log("Listening on " + port);
+	console.log("Listening on " + port);
 });
 
 

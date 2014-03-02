@@ -1,45 +1,41 @@
 <!doctype html>
 <html lang="en" ng-app="obApp" ng-controller="obController">
-<head>
-	<meta charset="UTF-8">
-	<title>Random Sales</title>
-	
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/bootstrap-css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+	<head>
+		<meta charset="UTF-8">
+		<title>Random Sales</title>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/bootstrap-css/bootstrap.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
-	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 	</head>
-<body>
+	<body>
 	<div class="container-fluid">
 		<div class="main-head">
 			<h1>Pick a Random Sales Agent</h1>
 			<button data-toggle="modal" data-target="#winner" class="btn btn-default btn-lg randomize" ng-click="randomize()">Go</button>
-
 		</div>
 		
 		<div class="agent-area container">
 			
-				
 			<div class="container-fluid agent-list" ng-repeat="agent in agents">
 				<button class="btn btn-primary agent-btn" ng-class="{present: agent.present === true}" 
 				ng-click="agent.present = !agent.present; updateAgents();">{{ agent.name }}<span><i class="glyphicon glyphicon-remove-sign" "rm-agent" ng-click="rmAgent($index)"></i></span></button>
 			</div>
 				
-		<div class="container-fluid new-agent-area">
 			
-			<input type="text" class="add-box" ng-model="newAgent" placeholder="Agent Name">
-			<button class="btn btn-primary btn-lg add-btn" ng-click="addAgent(newAgent)">Add Agent</button>
+			<div class="container-fluid new-agent-area">
+				<input type="text" class="add-box" ng-model="newAgent" placeholder="Agent Name">
+				<button class="btn btn-primary btn-lg add-btn" ng-click="addAgent(newAgent)">Add Agent</button>
+			</div>
 			
+				
 		</div>
 				
 			
-
-		</div>
-
-
 	<!-- Winner modal -->
 		<div class="modal fade" id="winner" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
 		  <div class="modal-dialog modal-lg">
@@ -48,9 +44,13 @@
 		    </div>
 		  </div>
 		</div>
+
 	</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
-<script src="js/obApp.js"></script>
-</body>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular.min.js"></script>
+	<script src="js/obApp.js"></script>
+	</body>
 </html>

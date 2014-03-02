@@ -31,13 +31,13 @@ obApp.controller("obController", function ($scope, $http){
 
 	};
 
-
 	$scope.addAgent = function (newAgent){
 
 		$scope.agents.push({'name' : newAgent, "present": true});
+		$scope.newAgent = "";
 		$scope.updateAgents();
 	};
-	
+
 	$scope.rmAgent = function (index) {
 
 		if(window.confirm("Do you really want to remove " + $scope.agents[index].name + "?")){
@@ -45,10 +45,11 @@ obApp.controller("obController", function ($scope, $http){
 			$scope.updateAgents();
 			
 		}
-
+	
 	};
 
 });
+
 
 
 

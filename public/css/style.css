@@ -1,14 +1,12 @@
-/**{
-	background-image: url('../old_moon.png');
+html{
+	padding: 0;
 }
-*/
 
 .main-head {
 	color: white;
 	background-color: rgb(103, 67, 151);
 	width: 100%;
 	font-family: sans-serif;
-	/*height: 70%;*/
 	padding: 10px;
 	text-align: center;
 }
@@ -72,15 +70,9 @@
 i {
 	border-radius: 50%;
 	float: right;
-/*	font-size: .8em;*/
 }
 
 i:hover{
 	color: #A60000;
 	background-color: white;
 }
-
-
-
-
-
